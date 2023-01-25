@@ -12,8 +12,8 @@ public class GameManager : MonoBehaviour
 
     private EnemySpawnSystem _enemySpawner;
 
-    public ShootingManager.Settings shootingSettings;
-    private ShootingManager _shootingManager;
+    public ShootingSystem.Settings shootingSettings;
+    private ShootingSystem _shootingManager;
 
     public WeaponSystem.Settings weaponSettings;
     private WeaponSystem _weaponSystem;
@@ -110,7 +110,7 @@ public class GameManager : MonoBehaviour
         _sceneContext.cameraRig.player = Player;
 
         _enemySpawner = new EnemySpawnSystem(_sceneContext.enemySpawnPoints, Player);
-        _shootingManager = new ShootingManager(Player, shootingSettings);
+        _shootingManager = new ShootingSystem(Player, shootingSettings);
         _coinsSystem = new CoinsSystem();
         _weaponSystem = new WeaponSystem(weaponSettings, _coinsSystem);
         _bombSystem = new BombSystem(bombSettings, Player);
