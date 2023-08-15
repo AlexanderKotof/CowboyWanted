@@ -2,4 +2,4 @@
 This is a simple 3d idle shooter game
 
 # Gameplay on YouTube
-(Here)[https://youtu.be/JrsoBtpqOE8]
+[Here](https://youtu.be/JrsoBtpqOE8)
